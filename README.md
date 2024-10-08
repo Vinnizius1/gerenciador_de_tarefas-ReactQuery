@@ -1,7 +1,5 @@
 # Gerenciador de Tarefas - React Query
 
-=====================================
-
 ## Sobre
 
 ---

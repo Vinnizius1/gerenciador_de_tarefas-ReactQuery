@@ -1,0 +1,59 @@
+.task-item {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
+
+    /* max-width: 100px; */
+    /* adicionei um max-width */
+    margin: 0 auto;
+    /* adicionei margin para centralizar */
+    min-width: 50%;
+    /* adicionei um min-width */
+}
+
+
+.task-item label {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.task-item input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+.edit-input {
+    flex: 1;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.edit-btn,
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    margin-left: 10px;
+    color: #555;
+}
+
+.edit-btn:hover {
+    color: #4caf50;
+}
+
+.delete-btn:hover {
+    color: #f44336;
+}
+
+.edit-btn svg,
+.delete-btn svg {
+    pointer-events: none;
+}

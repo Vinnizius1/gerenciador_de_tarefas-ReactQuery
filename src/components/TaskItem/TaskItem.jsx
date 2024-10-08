@@ -28,7 +28,7 @@ const TaskItem = ({ task, onUpdate, onDelete }) => {
 
   return (
     <article className={styles["task-item"]}>
-      {/* Checkbox para marcar ou desmarcar a tarefa */}
+      {/* Checkbox para marcar ou desmarcar a tarefa - POR PADRÃO vem como "false" */}
       <input
         type="checkbox"
         checked={task.completed}
@@ -36,7 +36,7 @@ const TaskItem = ({ task, onUpdate, onDelete }) => {
         onChange={() => onUpdate({ ...task, completed: !task.completed })}
       />
 
-      {/* Input para editar o "novo título" da tarefa */}
+      {/* Input que será aberto para editar o "novo título" da tarefa */}
       {isEditing ? (
         <input
           type="text"
@@ -49,7 +49,7 @@ const TaskItem = ({ task, onUpdate, onDelete }) => {
         <label>{task.title}</label>
       )}
 
-      {/* Botão de edição que será alterado quando se clicar nele */}
+      {/* Botão de edição que será alterado quando se clicar no ícone "faEdit" ou "faCheck" */}
       <Button
         className={styles["edit-btn"]}
         onClick={handleEdit}

@@ -10,6 +10,7 @@ const TaskFormInput = ({ onAdd }) => {
   // Armazena a tarefa criada e envia para o componente pai ("TaskList") por meio da função "onAdd"
   const [newTask, setNewTask] = useState("");
 
+  // Função que CRIA a "task" com as propriedades "title" igual a "newTask" (valor do input que o usário digitar) e "completed" com o valor "false" (vem por padrão, não é necessário informar ao usário)
   const handleSubmit = e => {
     e.preventDefault();
 

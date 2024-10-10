@@ -22,7 +22,7 @@ Este projeto é um gerenciador de tarefas simples, desenvolvido com React e Reac
 1. Certifique-se de ter o Node.js instalado.
 2. Clone este repositório.
 3. Abra dois terminais.
-4. No primeiro terminal, execute `json-server --watch db.json --port 5000` para iniciar o servidor de dados.
+4. No primeiro terminal, execute `json-server --watch db.json --port 5000//tasks` para iniciar o servidor de dados.
 5. No segundo terminal, execute `npm run dev` para iniciar o servidor de desenvolvimento.
 
 ## Pontos Positivos
